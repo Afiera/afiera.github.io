@@ -1,1 +1,272 @@
-sa
+<html><head>
+  <title>Sohbet Ve Oyun</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Afiera site">
+  <meta name="keywords" content="Afiera">
+  <meta name="author" content="Afiera">
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #15304b;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #6300c0; 
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #475470;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; 
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; 
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .container-fluid a{
+      color:#b777f3;
+  }
+  h4 a:hover{
+      color:#7617f1;
+  }
+  a:hover{
+      text-decoration: none;
+      color:whitesmoke;
+  }
+  .w3-top a:link,.w3-top a:visited {
+      text-decoration: none;
+      color : white;
+  }
+  .cities {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    } 
+		.navigation ul {
+			list-style-type: none;
+		}
+		.navigation ul a {
+			text-decoration: none;
+		}
+		.navigation ul li a {
+			display: block;
+		}
+		.navigation ul li {
+			float:left;
+			width:150px;
+			padding:8px;
+			background: white;
+			border-radius: 42px;
+			margin-right:8px;
+			color: white;
+			text-align: center;
+		}
+		.navigation ul li:hover {
+			background: Bisque;
+			border-radius: 0px;
+			transition-duration: 1.5s;
+		}
+		.navigation li ul {
+			display:none;
+			position:absolute;
+		}
+		.navigation li:hover ul {
+			display:block;
+			margin-top:9px;
+			margin-left:-49px;
+		}
+		.navigation li ul li {
+			clear:both;
+			display : block;
+			border-radius: 0px;
+			padding: 3px;
+			cursor: pointer;
+		}
+		.navigation li ul li a {
+			display: block;
+		}
+		.basarili {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #eefec2 no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #badc5d;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+		.hata {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #ffe59d no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #c8b26f;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+
+@keyframes mover {
+     0% { transform: translateY(0); }
+     100% { transform: translateY(-20px); }
+}
+
+    font-size: 14px;
+}
+.btn-primary {
+    background-color: #00000030;
+    border: 1px solid #2187BB;
+}
+
+.btn-primary:hover {
+    background-color: #00000030;
+    border: 1px solid #0E97EE;
+}
+
+.btn-info {
+    background-color: #00000030;
+    border: 1px solid #656565;
+}
+
+.btn-info:hover {
+    background-color: #00000030;
+    border: 1px solid #545454;
+}
+
+.button {
+    background-color: #00000030;
+    color: #015efc;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+.btn-like:hover {
+    background-color: black;
+    color: #015efc;
+    padding-right: 5px;
+    transition: all 0.8s;
+    border-radius: 5px;
+}
+html {
+    background-image: url("https://dinamik.tmf.org.tr/uploads/428_turkiye.jpg") !important;
+}
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122598984-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-122598984-1');
+</script>
+
+</head>
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar w3-deep-purple w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/index" class="w3-bar-item w3-button w3-padding-large w3-deep-purple w3-hover-white">Afiera</a>
+        <a href="/discord" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Discord</a>
+        <a href="/komutlar" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Komutlar</a>
+        <a href="/hakkinda" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hakkında</a>
+
+
+    </div>
+    
+    <div id="navDemo" class="w3-bar-block w3-deep-purple w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="/discord" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Discord</a>
+        <a href="https://discordbots.org/bot/521738982871007262/vote" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Oyla</a>
+        <a href="/komutlar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Komutlar</a>
+        <a href="/hakkinda" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Hakkında</a>
+    </div>
+</div>
+
+<div class="container-fluid bg-1 text-center">
+  <h2 class="w3-margin w3-jumbo">Afiera</h2>
+  <img src="https://cdn.discordapp.com/avatars/521738982871007262/5459f7823cb831620e74660fceb99131.png?size=2048" class="img-responsive img-circle margin" style="-webkit-animation: mover 1.5s infinite  alternate; animation: mover 1.5s infinite  alternate; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-iteration-count: infinite;  animation-iteration-count: infinite; border-radius: 50%     border: 4px solid #ffbb00; background-color: transparent; border-radius: 4px !important; overflow: visible !important; box-shadow: none !important; background: none !important; box-shadow: none !important; display:inline" alt="Afiera-Bot" width="350" height="350">
+  <h2>Genel amaçlı Türkçe Discord Botu</h2>
+    <br>
+  <div class="w3-bar">
+        <a href="https://discordapp.com/api/oauth2/authorize?client_id=521738982871007262&amp;permissions=8&amp;scope=bot" class="w3-button w3-teal w3-hover-white">Sunucuna Ekle</a>
+        <a href="https://discord.gg/KPG94uj" class="w3-button w3-teal w3-hover-white">Destek Sunucusuna Katıl</a>
+      </div>
+</div>
+
+
+<div class="container-fluid bg-2 text-center">
+  <h2 class="margin">Kütüphane</h2>
+  Discord.js kütüphanesi ile yazıldı. Kullanıcılarımızın <b>tavsiyeleri ile </b>hazırlanıyor.
+</div>
+  
+<div class="container-fluid bg-2 text-center">
+  <h2 class="margin">Yapımcı</h2>
+<b>Ayarsız</b> ve <b>Bad</b> ile yazıldı.
+</div>
+
+<center><div id="nasil" class="container-fluid bg-3 text-center">    
+  <h2 class="margin">Nasıl Kullanabilirim?</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <center><h4>Komutları görmek için botu <a href="https://discordapp.com/api/oauth2/authorize?client_id=484344587973033994&permissions=8&scope=bot">sunucunuza ekleyip </a> <b>svo!yardım</b> yazabilirsin.</h4></center>
+      <center><img src="https://cdn.discordapp.com/avatars/484344587973033994/3eebef6f09fc3e9aa1d08b3b73fab3ce.png?size=2048" class="img-responsive margin" style="width:100%" alt="yardim-gif"></center>
+    </div>
+    <div class="col-sm-4"> 
+      
+      
+    </div>
+    <div class="col-sm-4"> 
+      S
+      
+    </div>
+  </div>
+</div>
+</center>
+<footer class="container-fluid bg-4 text-center">
+  <p><a href="https://discord.gg/SZq7RdH">Destek Sunucusu</a> | <a href="https://discordapp.com/api/oauth2/authorize?client_id=484344587973033994&permissions=8&scope=bot">Davet Linki</a></p><br>
+  <p>© 2018 Afiera</p>
+
+</footer>
+
+<script>
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        </script>
+
+
+</body></html>
